@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\crud-dotnet\Estoque.Domain\Estoque.Domain.csproj" />
+    <ProjectReference Include="..\Estoque.Domain\Estoque.Domain.csproj" />
   </ItemGroup>
-
 </Project>

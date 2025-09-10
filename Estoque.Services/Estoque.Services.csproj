@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\crud-dotnet\Estoque.Domain\Estoque.Domain.csproj" />
+    <ProjectReference Include="..\Estoque.Domain\Estoque.Domain.csproj" />
     <ProjectReference Include="..\Estoque.Infrastructure\Estoque.Infrastructure.csproj" />
+    <ProjectReference Include="..\Estoque.Repositories\Estoque.Repositories.csproj" />
   </ItemGroup>
-
 </Project>

@@ -1,5 +1,4 @@
-﻿using BCrypt.Net;
-using Estoque.Domain.Models;
+﻿using Estoque.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Estoque.Infrastructure.Data

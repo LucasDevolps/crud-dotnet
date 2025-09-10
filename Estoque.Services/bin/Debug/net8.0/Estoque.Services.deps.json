@@ -10,6 +10,7 @@
         "dependencies": {
           "Estoque.Domain": "1.0.0",
           "Estoque.Infrastructure": "1.0.0",
+          "Estoque.Repositories": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
           "Microsoft.IdentityModel.Tokens": "8.14.0",
           "System.IdentityModel.Tokens.Jwt": "8.14.0"
@@ -642,6 +643,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "Estoque.Repositories/1.0.0": {
+        "dependencies": {
+          "Estoque.Domain": "1.0.0",
+          "Estoque.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Estoque.Repositories.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1035,6 +1048,11 @@
       "sha512": ""
     },
     "Estoque.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Estoque.Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

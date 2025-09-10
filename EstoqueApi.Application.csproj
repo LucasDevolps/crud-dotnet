@@ -31,10 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Estoque.Infrastructure\Estoque.Infrastructure.csproj" />
-    <ProjectReference Include="..\Estoque.Repositories\Estoque.Repositories.csproj" />
-    <ProjectReference Include="..\Estoque.Services\Estoque.Services.csproj" />
     <ProjectReference Include="Estoque.Domain\Estoque.Domain.csproj" />
   </ItemGroup>
-
 </Project>
