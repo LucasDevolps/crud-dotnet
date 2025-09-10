@@ -1,0 +1,34 @@
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de Editores de Código
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do Node e Angular
+/node_modules
+/dist
+/npm-debug.log*
+/yarn-debug.log*
+/.angular/
+.env
+
+# Arquivos do .NET
+/bin/
+/obj/
+/publish/
+/db_data/
+/.vs/
+*.user
+*.suo
+*.suo.*
+*.suo.user
+*.csproj.user
+*.suo.user
+*.cache
+*.exe
+*.dll
+appsettings*.Development.json
