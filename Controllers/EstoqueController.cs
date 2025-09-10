@@ -1,5 +1,7 @@
 ﻿using EstoqueApi.DTOs;
 using EstoqueApi.Interface;
+using EstoqueApi.Messaging;
+using EstoqueApi.Models;
 using EstoqueApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,16 +14,19 @@ namespace EstoqueApi.Controllers
     public sealed class EstoqueController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly IMessageProducer _messageProducer;
 
-        public EstoqueController(IProductService productService)
+        public EstoqueController(IProductService productService, IMessageProducer messageProducer)
         {
             _productService = productService;
+            _messageProducer = messageProducer;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var products = await _productService.GetAllProducts();
+
             return Ok(products);
         }
 
@@ -33,6 +38,7 @@ namespace EstoqueApi.Controllers
             {
                 return NotFound();
             }
+            
             return Ok(product);
         }
 
@@ -44,6 +50,9 @@ namespace EstoqueApi.Controllers
                 return BadRequest(ModelState);
             }
             var addedProduct = await _productService.AddProduct(productDto);
+
+            _messageProducer.SendMessage(addedProduct);
+
             return CreatedAtAction(nameof(GetById), new { uuid = addedProduct.Uuid }, addedProduct);
         }
 
@@ -55,6 +64,9 @@ namespace EstoqueApi.Controllers
             {
                 return NotFound();
             }
+
+            _messageProducer.SendMessage(updatedProduct);
+
             return Ok(updatedProduct);
         }
 

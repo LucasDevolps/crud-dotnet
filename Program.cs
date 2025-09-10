@@ -1,5 +1,6 @@
 using EstoqueApi.Data;
 using EstoqueApi.Interface;
+using EstoqueApi.Messaging;
 using EstoqueApi.Repository;
 using EstoqueApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -28,7 +29,8 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>(); 
-builder.Services.AddScoped<IProductService, ProductService>(); 
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IMessageProducer, RabbitMQProducer>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
