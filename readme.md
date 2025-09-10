@@ -1,6 +1,6 @@
-Ótima ideia\! Manter o `README.md` atualizado é uma prática profissional essencial.
+Ótima ideia\! Adicionar a arquitetura ao `README.md` é o que diferencia um projeto simples de um projeto profissional.
 
-Desde a última versão, adicionamos funcionalidades importantes como o **Docker** e o **RabbitMQ**, além de refinar os endpoints. Aqui está um `README.md` completo e atualizado que reflete o estado atual do seu projeto.
+A nova arquitetura em múltiplas bibliotecas de classes é um grande passo. Vamos atualizar o `README.md` para refletir essa estrutura e explicar o papel de cada camada.
 
 -----
 
@@ -8,7 +8,18 @@ Desde a última versão, adicionamos funcionalidades importantes como o **Docker
 
 # EstoqueApi - API de Gerenciamento de Estoque
 
-Este projeto é uma API RESTful para o gerenciamento de um sistema de estoque, desenvolvida com **ASP.NET Core 8**. A API segue os padrões de segurança e arquitetura mais recomendados, como a Arquitetura em Camadas, Injeção de Dependência, autenticação via JWT e comunicação assíncrona via RabbitMQ.
+Este projeto é uma API RESTful para o gerenciamento de um sistema de estoque, desenvolvida com **ASP.NET Core 8**. A arquitetura do projeto segue um padrão de **Arquitetura Limpa**, com separação de responsabilidades em múltiplas bibliotecas de classes para garantir escalabilidade e manutenibilidade.
+
+-----
+
+### Arquitetura do Projeto
+
+O projeto é dividido em quatro camadas lógicas:
+
+1.  **Estoque.Domain:** Contém as entidades de negócio (classes `Product` e `User`) e as interfaces de contrato (`IProductRepository`). É a camada que define o que a sua aplicação faz.
+2.  **Estoque.Application:** Contém a lógica de negócio (`ProductService`, `AuthService`) e as interfaces que definem as funcionalidades. É a camada que orquestra as operações.
+3.  **Estoque.Infrastructure:** Lida com a comunicação com o mundo externo, como o banco de dados (`AppDbContext`, `ProductRepository`) e o serviço de mensageria (`RabbitMQProducer`).
+4.  **EstoqueApi:** É a camada de apresentação. Contém os controladores e os DTOs e é o ponto de entrada da sua aplicação.
 
 -----
 
@@ -35,19 +46,19 @@ A API fornece os seguintes endpoints:
 ### Tecnologias
 
   * **Framework:** ASP.NET Core 8
+  * **Arquitetura:** Arquitetura Limpa com Injeção de Dependência
   * **Autenticação:** JSON Web Tokens (JWT)
   * **Hashing de Senha:** BCrypt
   * **Comunicação Assíncrona:** RabbitMQ
   * **Contêinerização:** Docker e Docker Compose
   * **Banco de Dados:** SQL Server
   * **ORM:** Entity Framework Core
-  * **Arquitetura:** Injeção de Dependência e Padrão de Repositório
 
 -----
 
-### Instalação e Execução com Docker
+### Instalação e Execução
 
-A maneira mais fácil e recomendada de rodar a aplicação é usando o Docker Compose.
+A maneira recomendada de rodar a aplicação é usando o Docker Compose.
 
 #### **1. Pré-requisitos**
 
@@ -85,5 +96,3 @@ Este comando irá:
 
   * **API:** A sua API estará disponível em `https://localhost:7039`. Você pode testar os endpoints através da interface do Swagger, disponível em `https://localhost:7039/swagger`.
   * **RabbitMQ:** O painel de gerenciamento do RabbitMQ estará disponível em `http://localhost:15672`. As credenciais padrão são **`admin`** e **`admin`**.
-
-Com este `README.md`, qualquer pessoa conseguirá entender e rodar o seu projeto rapidamente.
