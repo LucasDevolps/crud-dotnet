@@ -15,11 +15,15 @@ namespace EstoqueApi.Controllers
     {
         private readonly IProductService _productService;
         private readonly IMessageProducer _messageProducer;
+        private readonly ILogger<EstoqueController> _logger;
 
-        public EstoqueController(IProductService productService, IMessageProducer messageProducer)
+        public EstoqueController(IProductService productService, 
+                                IMessageProducer messageProducer,
+                                ILogger<EstoqueController> logger)
         {
             _productService = productService;
             _messageProducer = messageProducer;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -53,6 +57,8 @@ namespace EstoqueApi.Controllers
 
             _messageProducer.SendMessage(addedProduct);
 
+            _logger.LogInformation("Novo produto adicionado: {ProductName}", addedProduct.Name);
+
             return CreatedAtAction(nameof(GetById), new { uuid = addedProduct.Uuid }, addedProduct);
         }
 
@@ -66,6 +72,8 @@ namespace EstoqueApi.Controllers
             }
 
             _messageProducer.SendMessage(updatedProduct);
+
+            _logger.LogInformation("Novo produto atualizado: {ProductName}", updatedProduct.Name);
 
             return Ok(updatedProduct);
         }
