@@ -1,4 +1,4 @@
-﻿using EstoqueApi.Models;
+﻿using Estoque.Domain.Models;
 
 namespace EstoqueApi.Interface
 {

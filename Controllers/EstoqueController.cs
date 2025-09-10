@@ -1,8 +1,6 @@
 ﻿using EstoqueApi.DTOs;
 using EstoqueApi.Interface;
 using EstoqueApi.Messaging;
-using EstoqueApi.Models;
-using EstoqueApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

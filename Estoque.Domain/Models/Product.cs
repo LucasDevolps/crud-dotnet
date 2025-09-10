@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EstoqueApi.Models
+namespace Estoque.Domain.Models
 {
     public class Product
     {
