@@ -1,7 +1,8 @@
-using EstoqueApi.Data;
+using Estoque.Domain.Repositories;
+using Estoque.Infrastructure.Data;
+using Estoque.Services;
 using EstoqueApi.Interface;
 using EstoqueApi.Messaging;
-using EstoqueApi.Repository;
 using EstoqueApi.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -61,7 +62,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         {
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(
-        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+        Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? "")),
 
             ValidateIssuer = false,
             ValidateAudience = false,

@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36408.4 d17.14
+VisualStudioVersion = 17.14.36408.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueApi", "EstoqueApi.csproj", "{B6D3E7F9-19AF-4A7F-9F63-B9AFCB13A251}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueApi.Application", "EstoqueApi.Application.csproj", "{B6D3E7F9-19AF-4A7F-9F63-B9AFCB13A251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Domain", "Estoque.Domain\Estoque.Domain.csproj", "{B258E5EC-F976-45F2-B456-E273AFA8AF5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Services", "..\Estoque.Services\Estoque.Services.csproj", "{92073988-15CC-4840-8273-02023706BFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Infrastructure", "..\Estoque.Infrastructure\Estoque.Infrastructure.csproj", "{7ABE5688-06F6-4E0D-8090-A1701B76182B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Repositories", "..\Estoque.Repositories\Estoque.Repositories.csproj", "{ADF37E1D-2AE8-4DDE-BD80-BD29CA4AE253}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{B6D3E7F9-19AF-4A7F-9F63-B9AFCB13A251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6D3E7F9-19AF-4A7F-9F63-B9AFCB13A251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6D3E7F9-19AF-4A7F-9F63-B9AFCB13A251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B258E5EC-F976-45F2-B456-E273AFA8AF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B258E5EC-F976-45F2-B456-E273AFA8AF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B258E5EC-F976-45F2-B456-E273AFA8AF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B258E5EC-F976-45F2-B456-E273AFA8AF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92073988-15CC-4840-8273-02023706BFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92073988-15CC-4840-8273-02023706BFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92073988-15CC-4840-8273-02023706BFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92073988-15CC-4840-8273-02023706BFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ABE5688-06F6-4E0D-8090-A1701B76182B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ABE5688-06F6-4E0D-8090-A1701B76182B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ABE5688-06F6-4E0D-8090-A1701B76182B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ABE5688-06F6-4E0D-8090-A1701B76182B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF37E1D-2AE8-4DDE-BD80-BD29CA4AE253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF37E1D-2AE8-4DDE-BD80-BD29CA4AE253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF37E1D-2AE8-4DDE-BD80-BD29CA4AE253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF37E1D-2AE8-4DDE-BD80-BD29CA4AE253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

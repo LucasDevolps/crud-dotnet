@@ -1,4 +1,4 @@
-﻿using EstoqueApi.Data;
+﻿using Estoque.Infrastructure.Data;
 using EstoqueApi.DTOs;
 using EstoqueApi.Interface;
 using EstoqueApi.Services;
