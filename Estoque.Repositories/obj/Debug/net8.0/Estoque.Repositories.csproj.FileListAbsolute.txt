@@ -15,3 +15,4 @@ C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Repositories\
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Repositories\obj\Debug\net8.0\refint\Estoque.Repositories.dll
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Repositories\obj\Debug\net8.0\Estoque.Repositories.pdb
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Repositories\obj\Debug\net8.0\ref\Estoque.Repositories.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\crud-dotnet\Estoque.Repositories\obj\Debug\net8.0\Estoque.Repositories.pdb

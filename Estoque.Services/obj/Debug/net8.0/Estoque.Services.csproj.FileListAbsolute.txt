@@ -15,3 +15,4 @@ C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Services\obj\
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Services\obj\Debug\net8.0\refint\Estoque.Services.dll
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Services\obj\Debug\net8.0\Estoque.Services.pdb
 C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\Estoque.Services\obj\Debug\net8.0\ref\Estoque.Services.dll
+C:\Users\lucas\OneDrive\Área de Trabalho\pasta entrevista\crud-dotnet\Estoque.Services\obj\Debug\net8.0\Estoque.Services.pdb
