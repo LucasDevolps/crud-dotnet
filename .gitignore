@@ -17,11 +17,11 @@ Thumbs.db
 .env
 
 # Arquivos do .NET
-/bin/
-/obj/
-/publish/
-/db_data/
-/.vs/
+bin/
+obj/
+publish/
+db_data/
+.vs/
 *.user
 *.suo
 *.suo.*
