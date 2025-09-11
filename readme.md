@@ -1,11 +1,3 @@
-Ótima ideia\! Adicionar a arquitetura ao `README.md` é o que diferencia um projeto simples de um projeto profissional.
-
-A nova arquitetura em múltiplas bibliotecas de classes é um grande passo. Vamos atualizar o `README.md` para refletir essa estrutura e explicar o papel de cada camada.
-
------
-
-### README.md
-
 # EstoqueApi - API de Gerenciamento de Estoque
 
 Este projeto é uma API RESTful para o gerenciamento de um sistema de estoque, desenvolvida com **ASP.NET Core 8**. A arquitetura do projeto segue um padrão de **Arquitetura Limpa**, com separação de responsabilidades em múltiplas bibliotecas de classes para garantir escalabilidade e manutenibilidade.
