@@ -16,5 +16,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Estoque.Domain\Estoque.Domain.csproj" />
+    <ProjectReference Include="..\EstoqueApi.Application.csproj" />
   </ItemGroup>
 </Project>

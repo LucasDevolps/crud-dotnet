@@ -1,4 +1,5 @@
 ﻿using Estoque.Domain.Models;
+using EstoqueApi.Application;
 using Microsoft.EntityFrameworkCore;
 
 namespace Estoque.Infrastructure.Data
@@ -9,6 +10,7 @@ namespace Estoque.Infrastructure.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<RequestLog> RequestLogs { get; set; }
 
         public void SeedUsers()
         {
